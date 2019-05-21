@@ -1,0 +1,258 @@
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #3a3a3a;
+  background-color: snow;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive; 
+  font-weight: 700;
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: .05em;
+}
+
+h2 {
+  color: darkturquoise;
+  margin-bottom: .8em;
+  font-size: 2.5em;
+  letter-spacing: .1em;
+}
+
+h3 {
+  font-size: 1.8em;
+  letter-spacing: .1em;
+}
+
+h4 {
+  font-size: 1.2em;
+  letter-spacing: .1em;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ----- 
+End Base Element Styles 
+----- */
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.main-header {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.name {
+  font-size: 3em;
+}
+
+.main-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.main-nav li {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.main-nav li:last-child {
+  margin-bottom: 0;
+}
+
+.main-nav a {
+  color: darkturquoise;
+  font-size: 1.2em;
+}
+.main-nav a:hover{
+  color: salmon;
+}
+
+a:visited {
+  color: midnightblue;
+}
+
+/* ---- Layout Containers ---- */
+
+.content {
+  background-color: white;
+}
+
+#portfolio, #skills, #contact {
+  padding: 1.5em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  padding: 1.5em;
+
+}
+
+.col-left {
+  float: left;
+  vertical-align: top;
+}
+
+.col-right {
+  float: right;
+  vertical-align: top;
+}
+
+/* ---- Page Elements ---- */
+
+.intro {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1.5em;
+}
+
+.intro img {
+  max-width: 75%;
+  margin-bottom: 1em;
+}
+
+.block {
+  margin-bottom: 2.5em;
+}
+
+.block img {
+  margin-bottom: .8em;
+}
+
+.block h3 {
+  margin-bottom: .5em;
+}
+
+.block p {
+  line-height: 2em;
+}
+
+#portfolio .block:last-child, #skills .block:last-child {
+  margin-bottom: 0;
+}
+
+#skills .block img {
+  max-width: 150px;
+}
+
+#contact p {
+  margin-bottom: 1em;
+}
+
+#contact p:last-child {
+  margin-bottom: 0;
+}
+
+.contact-info {
+  display: inline-block;
+  padding-left: .5em;
+  font-weight: 700;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+
+.top a {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: salmon;
+}
+
+.top a:hover {
+  color: rgb(212, 99, 87);
+}
+
+.top a:visited {
+  color: midnightblue;
+}
+
+footer hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-bottom: 2em;
+}
+
+.footer-links {
+  display: none;
+}
+
+/* ----- 
+End Base Layout Styles 
+----- */
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    text-align: center;
+    margin: auto;
+    border: solid red 1px;
+  }
+
+  .main-nav li {
+    float: left;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+
+}
+
+/* .name {
+  float: left;
+} */
+
+
+/* ----- 
+Media Queries 
+----- */
+
+/* ================================= 
+  Float Clearfix
+==================================== */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
