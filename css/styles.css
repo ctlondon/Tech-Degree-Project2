@@ -70,6 +70,7 @@ End Base Element Styles
   margin: 0 auto;
   text-align: center;
   padding: 1.5em;
+  background-color: MistyRose;
 }
 
 .name {
@@ -102,6 +103,11 @@ End Base Element Styles
   color: salmon;
 }
 
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
 a:visited {
   color: midnightblue;
 }
@@ -110,6 +116,7 @@ a:visited {
 
 .content {
   background-color: white;
+  margin: 0 auto;
 }
 
 #portfolio, #skills, #contact {
@@ -120,7 +127,6 @@ a:visited {
 
 footer {
   padding: 1.5em;
-
 }
 
 .col-left {
@@ -131,6 +137,11 @@ footer {
 .col-right {
   float: right;
   vertical-align: top;
+}
+
+.footer-content {
+  margin: 0 auto;
+  max-width: 800px; 
 }
 
 /* ---- Page Elements ---- */
@@ -162,12 +173,23 @@ footer {
   line-height: 2em;
 }
 
+.description {
+  margin: 0 auto;
+  width: 80%;
+}
+
 #portfolio .block:last-child, #skills .block:last-child {
   margin-bottom: 0;
 }
 
 #skills .block img {
   max-width: 150px;
+  transition: all .5s;
+}
+
+#skills .block img:hover {
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
 #contact p {
@@ -210,6 +232,10 @@ footer hr {
   margin-bottom: 2em;
 }
 
+footer a {
+  color: #3a3a3a;
+}
+
 .footer-links {
   display: none;
 }
@@ -233,7 +259,7 @@ End Base Layout Styles
   .main-nav li {
     float: left;
     background-color: transparent;
-    width: 33%;
+    width: 25%;
   }
 
   .intro img {
@@ -250,36 +276,93 @@ End Base Layout Styles
 
   .center {
     margin: 0 auto;
-  }
-
-  .description {
-    margin: 0 auto;
-    width: 80%;
+    max-width: 80%;
   }
 
   #portfolio {
     margin: 0 auto;
+    padding-bottom: 0;
   }
 
   #portfolio .block {
     float: left;
-    max-width: 45%;
+    width: 47%;
     margin: 0 .5em 1em;
-    height: 400px;
+    height: 450px;
+  }
+
+  /* #portfolio .block:nth-of-type(odd) {
+    float: left;
+  }
+
+  #portfolio .block:nth-of-type(even) {
+    float: right;
+  } */
+
+  #skills {
+    padding-top: 0;
   }
 
   #skills .block {
     float: left;
-    max-width: 30%;
-    margin: 0 .5em 1em;
+    width: 33%;
   }
+
+  .top {
+    display: none;
+  }
+
+  .footer-links {
+    display: inline;
+  }
+
+  .footer-links ul {
+    float: right;
+    margin-top: 0;
+  }
+
+  .footer-links li {
+    float: left;
+    margin-left: 2em;
+    color: #3a3a3a;
+  }
+
+  footer a:hover {
+    color: rgb(212, 99, 87);
+  }
+
+
+  
 
 }
 
-/* .name {
-  float: left;
-} */
+@media (min-width: 1024px) {
 
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    margin-top: 1em;
+  }
+
+  .main-nav li {
+    margin-bottom: 0;
+  }
+
+  .main-header, .intro, #portfolio, #skills {
+    max-width: 1200px;
+  }
+
+  #portfolio .block {
+    float: left;
+    width: 31%;
+  }
+
+
+
+}
 
 /* ----- 
 Media Queries 
