@@ -226,14 +226,52 @@ End Base Layout Styles
 
   .main-nav {
     text-align: center;
-    margin: auto;
-    border: solid red 1px;
+    margin: 0 auto;
+    width: 50%;
   }
 
   .main-nav li {
     float: left;
-    margin-left: 10px;
     background-color: transparent;
+    width: 33%;
+  }
+
+  .intro img {
+    float: right;
+    max-width: 40%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+  }
+
+  .intro p {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .center {
+    margin: 0 auto;
+  }
+
+  .description {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #portfolio {
+    margin: 0 auto;
+  }
+
+  #portfolio .block {
+    float: left;
+    max-width: 45%;
+    margin: 0 .5em 1em;
+    height: 400px;
+  }
+
+  #skills .block {
+    float: left;
+    max-width: 30%;
+    margin: 0 .5em 1em;
   }
 
 }
