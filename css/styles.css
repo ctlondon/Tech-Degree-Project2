@@ -66,11 +66,14 @@ End Base Element Styles
 
 /* ---- Navigation ---- */
 
+header {
+  background-color: MistyRose;
+}
+
 .main-header {
   margin: 0 auto;
   text-align: center;
   padding: 1.5em;
-  background-color: MistyRose;
 }
 
 .name {
